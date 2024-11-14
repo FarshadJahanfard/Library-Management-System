@@ -1,4 +1,4 @@
-const Borrowingrecords = require('../controllers/Borrowingrecords'); // Adjust path as necessary
+const Borrowingrecords = require('./dummyRecords'); // Adjust path as necessary
 const sendEmail = require('../config/mail-service'); // Adjust path as necessary
 
 // Function to fetch a borrowing record by user ID
