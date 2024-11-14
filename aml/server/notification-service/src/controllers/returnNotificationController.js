@@ -1,5 +1,5 @@
-const Borrowingrecords = require('../controllers/Borrowingrecords'); 
-const sendEmail = require('../config/mail-service'); 
+const Borrowingrecords = require('../controllers/Borrowingrecords'); // Adjust path as necessary
+const sendEmail = require('../config/mail-service'); // Adjust path as necessary
 
 // Function to fetch a borrowing record by user ID
 const getBorrowingRecord = (userId) => {
@@ -37,7 +37,7 @@ const remindUserToReturnBook = async (userId) => {
     `;
 
     try {
-      await sendEmail('farshad389@gmail.com', 'Return Reminder', emailContent); // Replace with dynamic email address later
+      await sendEmail('farshad389@gmail.com', 'Return Reminder', emailContent); // Replace with actual user email
       console.log('Reminder email sent successfully');
     } catch (error) {
       console.error('Failed to send reminder email:', error);
